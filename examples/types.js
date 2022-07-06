@@ -1,14 +1,13 @@
 /**
- * Supported types
- * Every type definition in a GraphQL schema belongs to one of the following categories:
- * Scalar
- * Object
- * This includes the three special root operation types: Query, Mutation, and Subscription.
- * Input
- * Enum
- * Union
- * Interface
- * https://www.apollographql.com/docs/apollo-server/schema/schema/#supported-types
+ * GraphQL comes with a set of default scalar types out of the box:
+ * Int: A signed 32‐bit integer.
+ * Float: A signed double-precision floating-point value.
+ * String: A UTF‐8 character sequence.
+ * Boolean: true or false.
+ * ID: The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache.
+ * The ID type is serialized in the same way as a String; however, defining it as an ID signifies
+ * that it is not intended to be human‐readable.
+ * https://graphql.org/learn/schema/#scalar-types
  */
 
 const Directive = `
