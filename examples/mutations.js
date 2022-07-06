@@ -10,4 +10,19 @@ mutation{
     id
   }
 }
+
+mutation addUser($userData: userInput){
+   addUser(user: $userData) {
+    id
+  }
+}
+`;
+
+const QueryVariables = `
+{
+  "userData": {
+    "firstName": "test2",
+    "lastName": "test2"
+  }
+}
 `;
